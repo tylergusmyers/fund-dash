@@ -37,7 +37,7 @@ const BarChartComponent = ({ data }) => {
   return (
     <>
         <h3>Number of Donations by Amount:</h3>  
-        <BarChart width={600} height={400} data={chartData}>
+        <BarChart width={600} height={400} data={chartData} style={{margin:"auto"}}>
             <CartesianGrid strokeDasharray="3 3"/>
             <XAxis dataKey="label" />
             <YAxis />
