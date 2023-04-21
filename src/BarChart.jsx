@@ -35,14 +35,17 @@ const BarChartComponent = ({ data }) => {
   }));
 
   return (
-    <BarChart width={600} height={400} data={chartData}>
-      <CartesianGrid stroke="Number of Donations by Size" strokeDasharray="3 3" />
-      <XAxis dataKey="label" />
-      <YAxis />
-      <Tooltip />
-      <Legend />
-      <Bar dataKey="value" fill="#8884d8" />
-    </BarChart>
+    <>
+        <h3>Number of Donations by Amount:</h3>  
+        <BarChart width={600} height={400} data={chartData}>
+        <CartesianGrid strokeDasharray="3 3"/>
+        <XAxis dataKey="label" />
+        <YAxis />
+        <Tooltip />
+        <Legend />
+        <Bar dataKey="value" fill="#8884d8" />
+        </BarChart>
+    </>
   );
 };
 
