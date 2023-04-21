@@ -26,7 +26,7 @@ export default function App() {
       <form>
         <input type="file" onChange={handleFileUpload} />
       </form>
-      {data && <BarChartComponent data={data} />}
+      {data ? <BarChartComponent data={data} /> : null}
     </div>
   );
 }
