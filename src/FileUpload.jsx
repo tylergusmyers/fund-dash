@@ -23,9 +23,16 @@ export default function FileUpload() {
 
     return (<>
     
-    {data ? <BarChartComponent data={data}/> : <form>
-        <input className="file-input" type="file" onChange={handleFileUpload} />
-      </form>}
+    { data ? 
+        <div className="all-charts-wrapper">
+            <h3>Number of Donations by Amount:</h3> 
+            <BarChartComponent data={data}/> 
+        </div>
+        : 
+        <form>
+            <input className="file-input" type="file" onChange={handleFileUpload} />
+        </form>
+    }
     </>
     )
 }

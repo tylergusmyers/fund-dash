@@ -72,4 +72,9 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+  .all-charts-wrapper {
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
 }
