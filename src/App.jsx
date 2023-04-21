@@ -23,8 +23,9 @@ export default function App() {
 
   return (
     <div>
+      <h1 className="dash-title">Los Altos Community Foundation Dashboard</h1>
       <form>
-        <input type="file" onChange={handleFileUpload} />
+        <input className="file-input" type="file" onChange={handleFileUpload} />
       </form>
       {data ? <BarChartComponent data={data} /> : null}
     </div>

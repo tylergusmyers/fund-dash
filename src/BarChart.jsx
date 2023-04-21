@@ -36,7 +36,7 @@ const BarChartComponent = ({ data }) => {
 
   return (
     <BarChart width={600} height={400} data={chartData}>
-      <CartesianGrid strokeDasharray="3 3" />
+      <CartesianGrid stroke="Number of Donations by Size" strokeDasharray="3 3" />
       <XAxis dataKey="label" />
       <YAxis />
       <Tooltip />
