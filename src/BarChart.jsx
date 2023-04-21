@@ -38,12 +38,12 @@ const BarChartComponent = ({ data }) => {
     <>
         <h3>Number of Donations by Amount:</h3>  
         <BarChart width={600} height={400} data={chartData}>
-        <CartesianGrid strokeDasharray="3 3"/>
-        <XAxis dataKey="label" />
-        <YAxis />
-        <Tooltip />
-        <Legend />
-        <Bar dataKey="value" fill="#8884d8" />
+            <CartesianGrid strokeDasharray="3 3"/>
+            <XAxis dataKey="label" />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            <Bar dataKey="value" fill="#8884d8" />
         </BarChart>
     </>
   );

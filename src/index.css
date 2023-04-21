@@ -24,16 +24,22 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
+  text-align: center;
+  margin: auto;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
 
-h1 {
+.dash-title {
   font-size: 3.2em;
   line-height: 1.1;
+  font-weight: 100;
+  background-color: rgba(55, 55, 55, 0.87);
+  padding: 30px;
+  border-radius: 3px;
+  text-align: center;
+  margin-top: 0;
 }
 
 button {
@@ -65,5 +71,9 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+
+  .recharts-wrapper {
+    margin: auto;
   }
 }
