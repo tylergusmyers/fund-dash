@@ -61,6 +61,28 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.all-charts-wrapper {
+   display: flex;
+   align-items: center;
+   margin: auto;
+ }
+
+.single-chart-wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   margin: auto;
+}
+
+.chart-header {
+   box-shadow: 0px 0px 5px rgba(46, 46, 46, 0.87);
+   background-color: rgba(55, 55, 55, 0.87);
+   padding: 10px 40px;
+   font-weight: 300;
+   margin-right : 5px;
+
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -71,10 +93,5 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
-  }
-  .all-charts-wrapper {
-    display: flex;
-    align-items: center;
-    margin: auto;
   }
 }
