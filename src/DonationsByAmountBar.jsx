@@ -10,12 +10,13 @@ import {
 } from "recharts";
 import moment from "moment";
 
-export default function DonationsByAmountBar({ data }) {
+export default function DonationsByAmountBar({ donorData }) {
+  console.log(donorData);
   // Extracting labels and values from data
-  const labels = data.map((item) =>
+  const labels = donorData.map((item) =>
     moment(item["Donation Date"], "MM/DD/YYYY").format("MMM DD, YYYY")
   );
-  const values = data.map((item) => {
+  const values = donorData.map((item) => {
     const donationAmount = item[1] || "";
     // const parsedAmount = parseFloat(donationAmount.replace(/[^0-9.]/g, ""));
     return isNaN(donationAmount) ? 0 : donationAmount;

@@ -7,15 +7,16 @@ import {
   CartesianGrid,
   Tooltip,
   Legend,
+  //   Title,
 } from "recharts";
 import moment from "moment";
 
-export default function TotalDonationDollars({ data }) {
+export default function TotalDonationDollars({ donorData }) {
   // Extracting labels and values from data
-  const labels = data.map((item) =>
+  const labels = donorData.map((item) =>
     moment(item["Donation Date"], "MM/DD/YYYY").format("MMM DD, YYYY")
   );
-  const values = data.map((item) => {
+  const values = donorData.map((item) => {
     const donationAmount = item[1] || "";
     return isNaN(donationAmount) ? 0 : donationAmount;
   });
@@ -40,6 +41,7 @@ export default function TotalDonationDollars({ data }) {
         <Tooltip />
         <Legend />
         <Bar dataKey="USD" fill="#8884d8" />
+        {/* <Title text="Title" /> */}
       </BarChart>
     </>
   );
