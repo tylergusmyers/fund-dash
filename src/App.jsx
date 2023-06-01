@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import FileUpload from "./FileUpload";
+import Home from "./Home";
 
 export default function App() {
   return (
     <div>
       <h1 className="dash-title">Los Altos Community Foundation Dashboard</h1>
-      <FileUpload />
+      <Home />
     </div>
   );
 }
