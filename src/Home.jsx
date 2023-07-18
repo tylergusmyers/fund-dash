@@ -2,21 +2,12 @@ import { useState } from "react";
 import { read, utils } from "xlsx";
 import { Routes, Route, Link, Outlet } from "react-router-dom";
 import GraphComponent from "./GraphComponent";
-import axios from "axios";
+import DateFilter from "./DateFilter";
 
 export default function Home() {
   const [data, setData] = useState(null);
   const [selectedBox, setSelectedBox] = useState(null);
-  const boxNames = [
-    "Box-1",
-    "Box-2",
-    "Box-3",
-    "Box-4",
-    "Box-5",
-    "Box-6",
-    "Box-7",
-    "Box-8",
-  ];
+  const boxNames = ["Number-Of-Donations", "Dollar-Totals", "Box-3"];
 
   const handleFileUpload = (event) => {
     const file = event.target.files[0];
@@ -53,6 +44,7 @@ export default function Home() {
                 {name}
               </Link>
             ))}
+            <DateFilter />
           </nav>
           <div className="graph-wrapper">
             <Routes>

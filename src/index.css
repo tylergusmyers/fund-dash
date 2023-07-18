@@ -61,17 +61,33 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.all-charts-wrapper {
+.data-grid-wrapper {
    display: flex;
+   justify-content: center;
    align-items: center;
-   margin: auto;
+   margin-top: 20px;
+   width: 100%;
+   height: 400px;
+ }
+ 
+ .bar-chart-wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+   width: 100%;
+   height: 400px;
  }
 
 .single-chart-wrapper {
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
    align-items: flex-end;
    margin: auto;
+}
+
+.all-charts-wrapper {
+   padding: 25px;
 }
 
 .chart-header {
@@ -87,7 +103,7 @@ button:focus-visible {
    display: flex;
    align-items: center;
    justify-content: center;
-   width: 100px;
+   width: 300px;
    height: 100px;
    background-color: #f2f2f2;
    border-radius: 10px;
@@ -98,7 +114,9 @@ button:focus-visible {
 
  .home-main-wrapper {
    display: flex;
+   flex-direction: column;
    flex-wrap: wrap;
+   justify-content: space-evenly
  }
  
  .select-box:hover {
@@ -106,18 +124,25 @@ button:focus-visible {
  }
  
  .select-box-container {
-   display: flex;
-   justify-content: center;
+   display: grid;
+   grid-template-columns: repeat(2, 2fr);
+   justify-items: center;
    align-items: center;
  }
  
+ 
  .graph-component {
+   display: flex;
+   flex-direction: column;
    margin-top: 20px;
    padding: 20px;
-   background-color: #3b3b3b;
+   background-color: #959595;
    border-radius: 10px;
  }
  
+.graph-wrapper {
+   padding: 100px;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
